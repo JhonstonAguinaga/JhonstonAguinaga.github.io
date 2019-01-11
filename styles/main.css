@@ -1,0 +1,379 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+/* this is my code */
+* {
+	box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+}
+/* space */
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: black;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+/* Navbar */
+.navbar {
+  height: 70px;
+	position: top;
+	line-height: 70px;
+	text-align: right;
+	background-color: transparent;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+.navLinks {
+	margin: 0 30px 0 0;
+}
+.navLinks a {
+	color: white;
+	clear: right;
+	margin: 0 10px;
+	line-height: 70px;
+	text-decoration: none;
+}
+.navLinks a:hover {
+	border-bottom: 3px solid #f4f4f4;
+}
+.nametitle {
+  float: left;
+  color: #f4f4f4;
+  font-size: 1.5em; 
+  padding-left: 20px;
+  font-family: Helvetica Neue;
+}
+label {
+	width: 26px;
+	float: right;
+	display: none;
+	font-size: 26px;
+	line-height: 70px;
+	margin: 0 40px 0 0;
+}
+#toggle {
+	display: none;
+}
+/*background images*/
+.bgi {
+  margin: 0;  
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../images/dark-grass.jpg");
+}
+.backimg2 {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("../images/darksea.jpg");
+}
+/*cresent.jpg*/
+.backimg3 {
+  background-attachment: fixed;  
+  background-size: cover;
+  background-image: url("../images/cresentHalf.jpg");
+}
+/*--------------1 logo--------------*/
+.logo {
+  margin-top: 10%;
+  max-width: 25%;
+  position: center;
+  margin-left: 38%;
+}
+/*-------3 about me page code-------*/
+.polaroidimg {
+  z-index: 1;
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin-top: 7%;
+  rotate-left: 25%;
+  margin-left: 100px;
+  border: 10px solid rgb(250, 246, 239, .8);
+  border-bottom: 50px solid rgb(250, 246, 239, .8);
+}
+.aboutmebox {
+  z-index: 0;
+  top: 20%;
+  height: 54%;
+  width: cover;
+  color: white;
+  float: right;
+  position: relative;
+  padding-top: 5%;
+  padding-left: 39%;
+  padding-right: 20%;  
+  position: absolute;
+  background-color: rgba(60, 60, 60, .5);
+}
+.aboutmesize {
+  position: relative;
+  font-size: 500%;
+  padding-left: 23%;
+}
+/*#CDDBD2*/
+.aboutme {
+  margin-top: 5px;
+  text-align: center;
+}
+.contactbox {
+  margin-top: 125px;
+  color: white;
+  padding-left: 6.6%;
+  padding-top: 5%;
+}
+.contactalign {
+  width: 320px;
+  height: 30px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.e-maillength {
+  margin-top: 6px;
+  width: 550px;
+  resize: none;
+}
+.subbutton {
+  background-color: gray;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contactinfo {
+  background-color: rgba(25, 25, 25, 5);
+  width: 500px;
+  height: 500px;
+  float: right;
+  margin-top: -33%;
+  margin-right: 4%;
+  color: white;
+}
+.contactme {
+  font-size: 2em;
+  text-align: center;
+  padding-top: 5%;
+}
+.contactp {
+  padding-top: 5%;
+  text-align: center;
+}
+.moveul {
+  padding-left: 5%;
+  background-color: white;
+  border-radius: 4px;
+  color: black;
+  padding-bottom: 17px;
+  margin-top: 15%;
+}
+.fab {
+  font-size: 50px;
+  margin-left: 135px;
+  margin-top: 20px;
+  color: white;
+}
+/*--------2 image Slide Box--------*/
+* {
+  box-sizing: border-box
+}
+.mySlides {
+  display: none
+}
+.imgSlideSize {
+  width: 100%;
+  height: 50%;
+}
+img {
+  vertical-align: middle;
+}
+.slidebox {
+  margin: auto;
+  max-width: 800px;
+  position: relative;
+}
+.prev, .next {
+  top: 50%;
+  width: auto;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  margin-top: -22px;
+  position: absolute;
+  position: absolute;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  bottom: 8px;
+  width: 100%;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  text-align: center;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.workcontainer {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 75%;
+  background-color: rgba(20, 20, 20, .8);
+}
+.smollimg{
+  margin-top: 10%;
+  height: 35%;
+  width: 25%;
+  margin-left: 10%;
+}
+.aboutme2 {
+  position: relative;
+  top: -130px;
+  color: white;
+  margin-left: 49%;
+  margin-right: 10%;
+}
+/*------------Media for navbar------------*/
+@media only screen and (max-width: 690px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar{
+    	background-color: #0B3C3C;
+    }
+    .navLinks {
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+    .navLinks a {
+    	margin: 0;
+      display: block;
+      background-color: black;
+      border-bottom: 1px solid #EAEAEB;
+    }
+    .navLinks a:hover {
+		background-color: #266565;
+    }
+    #toggle:checked + .navLinks {
+      display: block;
+    }
+}
+/*------------Media for 1920 monitor------------*/
+@media only screen and (min-width: 1920px) {
+  .polaroidimg {
+    z-index: 1;
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin-top: 9%;
+    rotate-left: 25%;
+    margin-left: 150px;
+    border: 10px solid rgb(250, 246, 239, .8);
+    border-bottom: 50px solid rgb(250, 246, 239, .8);
+  }
+  .aboutmesize {
+    padding-left: 27%;
+    margin-top: 3%;
+  }
+  .contactinfo {
+  position: relative;
+  background-color: rgba(25, 25, 25, 5);
+  width: 500px;
+  height: 500px;
+  float: right;
+  margin-top: 5%;
+  margin-right: 4%;
+  color: white;
+}
+}
