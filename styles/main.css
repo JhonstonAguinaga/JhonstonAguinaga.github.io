@@ -353,12 +353,11 @@ img {
 		  background-color: black;
     }
     #toggle:checked + .navLinks {
-      /*z-index: 2;*/
       display: block;
     }
     .logo {
       z-index: 1;
-      margin-top: 48%;
+      margin-top: 35%;
       max-width: 75%;
       position: relative;
       margin-left: 14%;
