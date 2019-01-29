@@ -303,27 +303,47 @@ img {
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
-.workcontainer {
+.workContainer {
+  /*border: 3px solid green;*/
   margin-left: auto;
   margin-right: auto;
-  height: 100%;
-  width: 75%;
+  width: 80%;
   background-color: rgba(20, 20, 20, .8);
 }
-.smollimg{
-  margin-top: 10%;
-  height: 35%;
+.project {
+  display: flex;
+  /*border: 3px solid red;*/
+  height: 300px;
+  width: 100%;
+}
+.smoll{
+  flex: 1;
+  /*border: 3px solid blue;*/
+  height: 100%;
   width: 25%;
-  margin-left: 10%;
 }
-.aboutme2 {
-  position: relative;
-  top: -130px;
+.smollImg{
+  flex: 2;
+  margin-top: 15%;
+  height: 75%;
+  width: 75%;
+  margin-left: 19%;
+  border: 3px solid white;
+}
+.projectBox{
+  /*border: 3px solid yellow;*/
+  width: 70%;
+}
+.aboutProject {
+  position: center;
   color: white;
-  margin-left: 49%;
-  margin-right: 10%;
+  margin-top: 13%;
+  margin-bottom: 10%;
+  margin-right: 15%;
+  font-size: 150%;
+  margin-left: 15%;
 }
-/*------------Media for navbar------------*/
+/*-----Media for Navbar and Fist Page-----*/
 @media only screen and (max-width: 690px) {
     label {
       display: block;
@@ -362,6 +382,50 @@ img {
       position: relative;
       margin-left: 14%;
     }
+}
+/*----Second Page Media----*/
+@media only screen and (max-width: 690px) {
+  .workContainer {
+    /*border: 3px solid green;*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: rgba(20, 20, 20, .8);
+  }
+  .project {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /*border: 3px solid red;*/
+    height: 350px;
+    width: 100%;
+  }
+  .smoll{
+    position: relative;
+    /*border: 3px solid blue;*/
+    height: 50%;
+    width: 100%;
+  }
+  .smollImg{
+    margin-left: 13%;
+    margin-top: 10%;
+    height: 75%;
+    width: 75%;
+    /*border: 3px solid white;*/
+  }
+  .projectBox{
+    height: 30%;
+    width: 100%;
+    /*border: 3px solid yellow;*/
+  }
+  .aboutProject {
+    position: center;
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-right: 7%;
+    font-size: 75%;
+    margin-left: 12%;
+  }
 }
 /*------------Media for 1920 monitor------------*/
 @media only screen and (min-width: 1920px) {
